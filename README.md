@@ -42,6 +42,7 @@ Python code can be write and executed in many ways.
    > python
    > \>>> print("Hello, World!")
    > Hello, World
+   
 ---
 2. By using Python IDLE
 
