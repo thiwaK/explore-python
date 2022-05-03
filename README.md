@@ -37,7 +37,7 @@ Each line in a Python script is a statement. A statement is an instruction that 
 
 
 
-### Interpret your code
+### `Interpret your code`
 
 Python code can be write and executed in many ways.
 
@@ -69,7 +69,7 @@ Either way, you can run this simple program.
 
 
 
-### Comments
+### `Comments`
 
 Comments can be used to explain code you write. It help you and other people who use your code to read the code more easily. Also, comments can be used to prevent execution when testing code. There are multiple ways of writing comments.
 
@@ -102,7 +102,7 @@ Comments can be used to explain code you write. It help you and other people who
 
 
 
-### Identifiers
+### `Identifiers`
 
 Identifiers are names that used to identify variables, functions, modules, classes, and other objects in Python. The name of an identifier needs to starts with a letter or underscore (`_`). The following characters can be alphanumeric or underscore. Letters can be uppercase or lowercase.
 
@@ -153,9 +153,9 @@ Python identifiers are case-sensitive. For example, the `name`, `NAME` and `Name
 
 Note: **Keep in mind. Your identifiers should be meaningful and short.**
 
+---
 
-
-### Naming Conventions
+### `Naming Conventions`
 
 - [ ] Class names start with an uppercase letter. All other identifiers start with a lowercase letter.
 - [ ] Starting an identifier with a single leading underscore indicates that the identifier is private.
@@ -166,7 +166,7 @@ Note: **Keep in mind. Your identifiers should be meaningful and short.**
 
 ## Resources
 
-### Cheat Sheets
+### `Cheat Sheets`
 
 1. [intellipaat.com](#https://intellipaat.com/mediaFiles/2018/11/Python-Basics-Cheat-Sheet-1-1.png)
 2. [cusy.io](#https://cusy.io/en/assets/images/python-cheat-sheet-2.jpg)
