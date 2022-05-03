@@ -10,7 +10,7 @@ I created this as short note to explain the things I had explored in the world o
 
 ## Table of content
 
-- [ ] [Basic Syntax](#basic-syntax)
+- [Basic Syntax](#basic-syntax)
    - [Interpret your code](#interpret-your-code)
    - [Comments](#comments)
    - Identifiers
@@ -26,9 +26,9 @@ I created this as short note to explain the things I had explored in the world o
 - Exceptions
 - Functions
 
-### Basic Syntax
+## Basic Syntax
 
-#### Interpret your code
+### Interpret your code
 
 Python codes can be write and executed in many ways.
 
@@ -57,7 +57,7 @@ Either way, you can run this simple program.
 
 
 
-#### Comments
+### Comments
 
 Comments can be used to explain code you write. It help you and other people who use your code to read the code more easily. Also, comments can be used to prevent execution when testing code. There are multiple ways of writing comments.
 
