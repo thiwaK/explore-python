@@ -1,4 +1,4 @@
-# Become a Python developer
+# Want to be a Python developer
 
 ![](https://www.snpinfotech.com/assets/images/developments/python_banner.jpg)
 
@@ -27,6 +27,9 @@ I created this as short note to explain the things I had explored in the world o
 - Lists, Tuples, Sets, Dictionaries
 - Exceptions
 - Functions
+- [Resources](#resources)
+   - [Cheat Sheets](#cheat-sheets)
+
 
 ## Basic Syntax
 
@@ -155,9 +158,17 @@ Note: **Keep in mind. Your identifiers should be meaningful and short.**
 ### Naming Conventions
 
 - [ ] Class names start with an uppercase letter. All other identifiers start with a lowercase letter.
-
 - [ ] Starting an identifier with a single leading underscore indicates that the identifier is private.
-
 - [ ] Starting an identifier with two leading underscores indicates a strongly private identifier.
-
 - [ ] Identifier ends with two trailing underscores is a language-defined special name.
+
+
+
+## Resources
+
+### Cheat Sheets
+
+1. [intellipaat.com](#https://intellipaat.com/mediaFiles/2018/11/Python-Basics-Cheat-Sheet-1-1.png)
+2. [cusy.io](#https://cusy.io/en/assets/images/python-cheat-sheet-2.jpg)
+3. [cusy.io](#https://cusy.io/en/assets/images/python-cheat-sheet.jpg)
+
