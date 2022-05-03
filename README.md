@@ -13,12 +13,12 @@ I created this as short note to explain the things I had explored in the world o
 - [Basic Syntax](#basic-syntax)
    - [Interpret your code](#interpret-your-code)
    - [Comments](#comments)
-   - Identifiers
+   - [Identifiers](#identifiers)
+   - [Naming Conventions](#naming-conventions)
    - Multiple Statements in Single Line
+   - Single statement in Multi-lines
    - Indentation
-   - Naming Conventions
    - 
-   
 - Variables and Data Types
 - Conditionals
 - Type Casting
@@ -67,7 +67,7 @@ Comments can be used to explain code you write. It help you and other people who
 
 - Single line comment
 
-  Use to make single line of comment. Generally use hash tag (#) to indicate single line comment.
+  Use to make single line of comment. Generally use hash tag (`#`) to indicate single line comment.
   
   ```python
   name = input("Enter your name") # Take user's name as a input
@@ -79,7 +79,7 @@ Comments can be used to explain code you write. It help you and other people who
   
 - Multi line comment
 
-  Use to make multi-lines of comment.
+  Use to make multi-lines of comment. Use six single quotes as two groups of three and three (`''' '''`) to indicate multi-line comment.
 
   ```python
   '''This code will,
@@ -96,3 +96,59 @@ Comments can be used to explain code you write. It help you and other people who
 
 ### Identifiers
 
+Identifiers are names that used to identify variables, functions, modules, classes, and other objects in Python. The name of an identifier needs to starts with a letter or underscore (`_`). The following characters can be alphanumeric or underscore. Letters can be uppercase or lowercase.
+
+| NAME | _nAme | n___ |
+|----|----|----|
+| **__**   | **n4**    | **_4**   |
+| **n4__** | **N4me**  | **n_4** |
+
+
+
+
+Identifiers should not contains any other symbols like `@`, `$`, `#`, and so on. Also, we can not start a identifier by a number. In the below table, we can find invalid identifiers.
+
+| 4name | &name | name! |
+| ----- | ---- | ---- |
+
+
+
+In a computer languages there are some words known as keywords or reserved word.  Keywords are words that cannot be used as an identifier. Here is some of them.
+
+| and      | exec    | not    |
+| -------- | ------- | ------ |
+| assert   | finally | or     |
+| break    | for     | pass   |
+| class    | from    |  return |
+| continue | global  | raise  |
+| def      | if      | lambda |
+| del      | import  | try    |
+| elif     | in      | while  |
+| else     | is      | with   |
+
+
+
+
+You can use following code to find the current keywords.
+
+```python
+import keyword
+
+print(keyword.kwlist) 
+```
+
+
+
+Python identifiers are case-sensitive. For example, the `name`, `NAME` and `Name` are three different identifiers!
+
+
+
+### Naming Conventions
+
+- [ ] Class names start with an uppercase letter. All other identifiers start with a lowercase letter.
+
+- [ ] Starting an identifier with a single leading underscore indicates that the identifier is private.
+
+- [ ] Starting an identifier with two leading underscores indicates a strongly private identifier.
+
+- [ ] Identifier ends with two trailing underscores is a language-defined special name.
