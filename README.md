@@ -28,9 +28,13 @@ I created this as short note to explain the things I had explored in the world o
 
 ## Basic Syntax
 
+Each line in a Python script is a statement. A statement is an instruction that a Python interpreter can execute. Each Python statement ends with a NEWLINE character. 
+
+
+
 ### Interpret your code
 
-Python codes can be write and executed in many ways.
+Python code can be write and executed in many ways.
 
 1. By using Command Line
 
@@ -38,14 +42,14 @@ Python codes can be write and executed in many ways.
    > python
    > \>>> print("Hello, World!")
    > Hello, World
-   
+---
 2. By using Python IDLE
 
    > \>>> print("Hello, World!")
    >
    > Hello, World
-
-3. By using text editor
+---
+3. By using a text editor or a IDE
 
    > print("Hello, World!")
 
@@ -79,7 +83,7 @@ Comments can be used to explain code you write. It help you and other people who
 
   ```python
   '''This code will,
-  	* Display 'Hi'
+      * Display 'Hi'
       * Take user's name as a input 
       * Display the name enterd by user and terminate'''
   
@@ -87,3 +91,8 @@ Comments can be used to explain code you write. It help you and other people who
   name = input("Enter your name")
   print(name)
   ```
+
+
+
+### Identifiers
+
