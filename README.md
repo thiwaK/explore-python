@@ -1,5 +1,7 @@
 # Become a Python developer
 
+![](https://www.snpinfotech.com/assets/images/developments/python_banner.jpg)
+
 Python is a powerful general-purpose programming language used in GIS, data science, web development, machine learning, game development and so on. Python is simple, easy-to-use, versatile language. That is why it gain huge popularity among community and biggest organizations such as Google, NASA and Spotify use Python to power-up their services.
 
 I created this as short note to explain the things I had explored in the world of Python as much as simple I can. To kick start, you may required
@@ -28,7 +30,7 @@ I created this as short note to explain the things I had explored in the world o
 
 ## Basic Syntax
 
-Each line in a Python script is a statement. A statement is an instruction that a Python interpreter can execute. Each Python statement ends with a NEWLINE character. 
+Each line in a Python script is a statement. A statement is an instruction that Python interpreter can execute. Each Python statement ends with a NEWLINE character. 
 
 
 
@@ -39,10 +41,12 @@ Python code can be write and executed in many ways.
 1. By using Command Line
 
    In Windows, open CMD. In Linux/Mac open terminal.
-   > python
-   > \>>> print("Hello, World!")
-   > Hello, World
    
+   > python
+   >
+   > \>>> print("Hello, World!")
+   >
+   > Hello, World
 ---
 2. By using Python IDLE
 
@@ -141,6 +145,10 @@ print(keyword.kwlist)
 
 
 Python identifiers are case-sensitive. For example, the `name`, `NAME` and `Name` are three different identifiers!
+
+
+
+Note: **Keep in mind. Your identifiers should be meaningful and short.**
 
 
 
