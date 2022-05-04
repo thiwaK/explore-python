@@ -226,8 +226,10 @@ Leading space or tab at the beginning of the line is considered as indentation l
 a = 5
 
 if a == 5:
+    # This block of code execute when a is equals to 5
     print("a is 5")
 else:
+    # If it is not, this block of code will execute
     print("a is not 5")
 ```
 
