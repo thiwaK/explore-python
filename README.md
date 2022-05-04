@@ -235,9 +235,86 @@ else:
 
 
 
+There are several rules.
+
+- [ ] Use the colon `:` to start a block.
+
+- [ ] All the lines in a block must use the same indentation, either space or a tab.
+
+- [ ] A block can have inner blocks with next level indentation.
+
+  ```python
+  a = 5
+  
+  if a > 0:
+      # This block of code execute when a is equals to 5
+      print("a is a positive integer")
+      
+      if a%2 == 0:
+          # a can be devide by
+          print("a is a mulatiple of 2")
+  else:
+      # If it is not, this block of code will execute
+      print("a is not a positive integer")
+  ```
+
+- [ ] Do not mix space and tab in the same script.
+
+
+
+## Variable and Data types
+
+
+
+### Variable
+
+A variable is a labeled location used to store data in the main memory. So variables is a container with a unique name that can holds data in it. To define a variable, you use the following syntax.
+
+```python
+variable_name = value
+```
+
+Here, `=` symbol is the assignment operator. It assign right hand side value to the left hand side variable. Variable can hold any value or values belongs to a data type.
+
+```python
+my_age = 22            # This variable contains an integer
+my_name = "Thiwanka"   # This variable contains a string (text)
+my_weight_in_kg = 60.5 # This variable contains a deciaml
+```
+
+In Python, data holds in a variable can be changed later with in the program. 
+
+```python
+temp_var = True
+temp_var = "Python"
+temp_var = 5
+```
+
+
+
+### Data types
+
+Data types are the categorization of data items. Python supports several built-in data types.
+
+- [ ] Scaler Types
+  - Integer `int` - Positive or negative whole numbers. Ex: `10` `-10` 
+  - Floating-point `float` - Any real number with a floating-point representation. Ex: `0.001` `1.0e-3`
+  - Boolean `bool` - Values should be `True` `False` or `1` `0`.
+  - Null `None` - Represents the null object in Python. Ex: `name = None`
+- [ ] Sequence Types
+  - Text `string` - Collection of one or more characters put in single, double or triple quotes. Ex: `'thiwaK'` `"thiwaK"` `"""thiwaK"""`
+  - List `list` - An ordered collection of one or more data items, not necessarily of the same type. Ex: `names = ['Snow', 'Shelby']` `temp_data = ['fabbc5f=', 55, False, 0.1]`
+  - Tuple `tuple` - An ordered collection of one or more data items, not necessarily of the same type.
+- [ ] Mapping Types
+  - Dictionary `dict` - an unordered collection of data in a `key`:`value` pair form. Ex: `player_score = {'Snow':20, 'Shelby': 50}`
+
+
+
+
+
 ## Resources
 
-### `Cheat Sheets`
+### Cheat Sheets
 
 - [intellipaat.com](#https://intellipaat.com/mediaFiles/2018/11/Python-Basics-Cheat-Sheet-1-1.png)
 
