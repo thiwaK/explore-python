@@ -297,18 +297,33 @@ temp_var = 5
 Data types are the categorization of data items. Python supports several built-in data types.
 
 - [ ] Scaler Types
-  - Integer `int` - Positive or negative whole numbers. Ex: `10` `-10` 
+  - Integer `int` - Positive or negative whole numbers.
+    - Integer -  `10` `-10` 
+    - Hexadecimal -  `0xfff`
+    - Octal - `0o777`
+    - Binary - `0b1000001`
   - Floating-point `float` - Any real number with a floating-point representation. Ex: `0.001` `1.0e-3`
   - Boolean `bool` - Values should be `True` `False` or `1` `0`.
   - Null `None` - Represents the null object in Python. Ex: `name = None`
 - [ ] Sequence Types
   - Text `string` - Collection of one or more characters put in single, double or triple quotes. Ex: `'thiwaK'` `"thiwaK"` `"""thiwaK"""`
   - List `list` - An ordered collection of one or more data items, not necessarily of the same type. Ex: `names = ['Snow', 'Shelby']` `temp_data = ['fabbc5f=', 55, False, 0.1]`
-  - Tuple `tuple` - An ordered collection of one or more data items, not necessarily of the same type.
+  - Tuple `tuple` - An ordered collection of one or more data items, not necessarily of the same type. Ex: `names = ('Snow', 'Shelby')` `temp_data = ('fabbc5f=', 55, False, 0.1)`
 - [ ] Mapping Types
   - Dictionary `dict` - an unordered collection of data in a `key`:`value` pair form. Ex: `player_score = {'Snow':20, 'Shelby': 50}`
 
 
+
+| Class   | Name           | Mutable | Supports                 |
+| ------- | -------------- | ------- | ------------------------ |
+| int     | Integer        | No      | int (int, hex, bin, oct) |
+| float   | Floating point | No      | float                    |
+| string  | Text           | No      | string                   |
+| bool    | Boolean        | No      | bool                     |
+| list    | List           | Yes     | any                      |
+| tuple   | Tuple          | Yes     | any                      |
+| dict    | Dictionary     | Yes     | any                      |
+| complex | Complex        | No      | complex                  |
 
 
 
