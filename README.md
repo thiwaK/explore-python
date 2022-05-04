@@ -20,7 +20,6 @@ I created this as short note to explain the things I had explored in the world o
    - Multiple Statements in Single Line
    - Single statement in Multi-lines
    - Indentation
-   - 
 - Variables and Data Types
 - Conditionals
 - Type Casting
@@ -75,7 +74,7 @@ Comments can be used to explain code you write. It help you and other people who
 
 - Single line comment
 
-  Use to make single line of comment. Generally use hash tag (`#`) to indicate single line comment.
+  Generally use hash tag (`#`) to indicate single line comment.
   
   ```python
   name = input("Enter your name") # Take user's name as a input
@@ -87,7 +86,7 @@ Comments can be used to explain code you write. It help you and other people who
   
 - Multi line comment
 
-  Use to make multi-lines of comment. Use six single quotes as two groups of three and three (`''' '''`) to indicate multi-line comment.
+  Use six single quotes as two groups  (`''' '''`) to indicate a multi-line comment.
 
   ```python
   '''This code will,
@@ -157,10 +156,27 @@ Note: **Keep in mind. Your identifiers should be meaningful and short.**
 
 ### `Naming Conventions`
 
-- [ ] Class names start with an uppercase letter. All other identifiers start with a lowercase letter.
+- [ ] Class names should use the TitleCase convention. All other identifiers start with a lowercase letter.
+
+  `Class Persion`    `Class NetworkManager` 
+
+- [ ] If it is a function name and contains multiple words, should use underscores to separate the words.
+
+- [ ] Constant variable names should be in uppercase.
+
+  `PI=3.141`    `RATE=3.4` 
+
 - [ ] Starting an identifier with a single leading underscore indicates that the identifier is private.
+
 - [ ] Starting an identifier with two leading underscores indicates a strongly private identifier.
+
+- [ ] Use of one or two underscore characters when naming the instance attributes of a class.
+
 - [ ] Identifier ends with two trailing underscores is a language-defined special name.
+
+- [ ] Two leading and trailing underscores are used in Python itself for a special purpose.
+
+  `__init__`    `__main__`    `__add__`
 
 
 
@@ -168,7 +184,8 @@ Note: **Keep in mind. Your identifiers should be meaningful and short.**
 
 ### `Cheat Sheets`
 
-1. [intellipaat.com](#https://intellipaat.com/mediaFiles/2018/11/Python-Basics-Cheat-Sheet-1-1.png)
-2. [cusy.io](#https://cusy.io/en/assets/images/python-cheat-sheet-2.jpg)
-3. [cusy.io](#https://cusy.io/en/assets/images/python-cheat-sheet.jpg)
+- [intellipaat.com](#https://intellipaat.com/mediaFiles/2018/11/Python-Basics-Cheat-Sheet-1-1.png)
 
+- [cusy.io](#https://cusy.io/en/assets/images/python-cheat-sheet-2.jpg)
+
+- [cusy.io](#https://cusy.io/en/assets/images/python-cheat-sheet.jpg)
