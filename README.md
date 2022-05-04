@@ -17,9 +17,9 @@ I created this as short note to explain the things I had explored in the world o
    - [Comments](#comments)
    - [Identifiers](#identifiers)
    - [Naming Conventions](#naming-conventions)
-   - Multiple Statements in Single Line
-   - Single statement in Multi-lines
-   - Indentation
+   - [Multiple Statements in a Single Line](#multiple-statements-in-a-single-line)
+   - [Single statement in Multiple Lines](#single-statement-in-multiple-lines)
+   - [Indentation](#Indentation)
 - Variables and Data Types
 - Conditionals
 - Type Casting
@@ -30,10 +30,9 @@ I created this as short note to explain the things I had explored in the world o
    - [Cheat Sheets](#cheat-sheets)
 
 
+
 ## Basic Syntax
-
 Each line in a Python script is a statement. A statement is an instruction that Python interpreter can execute. Each Python statement ends with a NEWLINE character. 
-
 
 
 ### `Interpret your code`
@@ -42,29 +41,30 @@ Python code can be write and executed in many ways.
 
 1. By using Command Line
 
-   In Windows, open CMD. In Linux/Mac open terminal.
+   In Windows, open CMD. In Linux/Mac, open terminal.
    
-   > python
-   >
-   > \>>> print("Hello, World!")
-   >
-   > Hello, World
----
+   ```shell
+   python
+   >>> print("Hello, World!")
+   Hello, World
+
 2. By using Python IDLE
 
-   > \>>> print("Hello, World!")
-   >
-   > Hello, World
----
+   ```IDL
+   >>> print("Hello, World!")
+   Hello, World
+
 3. By using a text editor or a IDE
-
-   > print("Hello, World!")
-
+   
+   ```python
+   print("Hello, World!")
+   ```
+   
    Write above code in a new file and save as **.py** file and execute.
    
    Note: py is the extension of python script files.
 
-Either way, you can run this simple program. 
+Either way, you can run (interpret) your program. 
 
 
 
@@ -156,7 +156,7 @@ Note: **Keep in mind. Your identifiers should be meaningful and short.**
 
 ### `Naming Conventions`
 
-- [ ] Class names should use the TitleCase convention. All other identifiers start with a lowercase letter.
+- [ ] Class names should use the Title Case convention. All other identifiers start with a lowercase letter.
 
   `Class Persion`    `Class NetworkManager` 
 
@@ -177,6 +177,55 @@ Note: **Keep in mind. Your identifiers should be meaningful and short.**
 - [ ] Two leading and trailing underscores are used in Python itself for a special purpose.
 
   `__init__`    `__main__`    `__add__`
+
+
+
+### Multiple Statements in a Single Line
+
+The semicolon (` ; `) allows Python to execute multiple statements written in a single line of code.
+
+```python
+import datetime; now = datetime.datetime.now(); current_time = now.strftime("%H:%M:%S"); print("Current Time =", current_time)
+```
+
+
+
+### Single statement in Multiple lines
+
+Python uses a newline character (`\n`) to separate statements. It places each statement on one line. However, a long statement can span multiple lines by using the backslash (`\`) character.
+
+```python
+a,b,c = True, False, True
+
+if (a == True) \
+and (b == False) and \
+(c == True):
+    print("Continuation of statements")
+```
+
+
+
+Statements contained within the `[]`, `{}`, or `()` brackets do not need to use the line continuation character.
+
+```python
+days = ['Monday', 'Tuesday', 'Wednesday',
+        'Thursday', 'Friday']
+```
+
+
+
+### Indentation
+
+Leading space or tab at the beginning of the line is considered as indentation level of the line. It is used to determine a group of statements which is belongs to a block of code. The number of spaces in the indentation is variable, but all statements within the block must be indented the same amount.
+
+```python
+a = 5
+
+if a == 5:
+    print("a is 5")
+else:
+    print("a is not 5")
+```
 
 
 
