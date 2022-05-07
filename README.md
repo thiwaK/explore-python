@@ -2,13 +2,13 @@
 
 ![](https://www.snpinfotech.com/assets/images/developments/python_banner.jpg)
 
-Python is a powerful general-purpose programming language used in GIS, data science, web development, machine learning, game development and so on. Python is simple, easy-to-use, versatile language. That is why it gain huge popularity among community and biggest organizations such as Google, NASA and Spotify use Python to power-up their services.
+Python is a powerful general-purpose programming language used in GIScience, data science, web development, machine learning, game development and so on. Python is simple, easy-to-use, versatile language. That is why it gains huge popularity in the community and the biggest organizations such as Google, NASA and Spotify use Python to power-up their services.
 
-I created this as short note to explain the things I had explored in the world of Python as much as simple I can. To kick start, you may required
+I created this as a short note to explain the things I had explored in the world of Python as much as simple I can. To kick start, you may required
 
 * A computer with Python 3.x installed
 
-* A text editor or IDE (Sublime , VSCode or whatever you preferred)
+* A text editor or IDE (Sublime, VSCode or whatever you preferred)
 
 * Patience and Time
 
@@ -24,19 +24,34 @@ I created this as short note to explain the things I had explored in the world o
    - [Multiple Statements in a Single Line](#multiple-statements-in-a-single-line)
    - [Single statement in Multiple Lines](#single-statement-in-multiple-lines)
    - [Indentation](#Indentation)
-- Variables and Data Types
+   
+- [Variables and Data Types](#variables-and-data-types)
+   - [Variables](#variables)
+   
+     - Multiple methods to assign
+   
+     - Global and Local variables
+     - Delete declared variable
+   
+   - [Data types](#data-types)
+   
 - Conditionals
+
 - Type Casting
+
 - Lists, Tuples, Sets, Dictionaries
+
 - Exceptions
+
 - Functions
+
 - [Resources](#resources)
    - [Cheat Sheets](#cheat-sheets)
 
 
 
 ## Basic Syntax
-Each line in a Python script is a statement. A statement is an instruction that Python interpreter can execute. Each Python statement ends with a NEWLINE character. 
+Each line in a Python script is a statement. A statement is an instruction or may be a set of instructions that Python interpreter can execute. Each Python statement ends with a NEWLINE character. 
 
 
 ### Interpret your code
@@ -247,11 +262,11 @@ There are several rules.
   a = 5
   
   if a > 0:
-      # This block of code execute when a is equals to 5
+      # This block of code execute when a is greater than 0
       print("a is a positive integer")
       
       if a%2 == 0:
-          # a can be devide by
+          # This block of code execute whe a can be devide by 2
           print("a is a mulatiple of 2")
   else:
       # If it is not, this block of code will execute
@@ -262,11 +277,11 @@ There are several rules.
 
 
 
-## Variable and Data types
+## Variables and Data types
 
 
 
-### Variable
+### Variables
 
 A variable is a labeled location used to store data in the main memory. So variables is a container with a unique name that can holds data in it. To define a variable, you use the following syntax.
 
@@ -282,7 +297,7 @@ my_name = "Thiwanka"   # This variable contains a string (text)
 my_weight_in_kg = 60.5 # This variable contains a deciaml
 ```
 
-In Python, data holds in a variable can be changed later with in the program. 
+In Python, data holds in a variable can be changed later (redeclare) with in the program. 
 
 ```python
 temp_var = True
@@ -292,13 +307,72 @@ temp_var = 5
 
 
 
+#### Multiple methods to assign
+
+```python
+a = 1; b = 2; c = 3 # set a to 1, b to 2, and c to 3
+a = b = c = 1       # set a, b and c to 1
+a, b, c = 1, 2, 3   # set a to 1, b to 2, and c to 3
+```
+
+
+
+#### Global and Local variables
+
+All the variables declared in python may not be accessible at all locations. It will depend on where these variables  were declared. **Scope of the variable** defines where in the program the  variable will be accessible. The scope can be either Local or Global.
+
+A variable that is declared inside a python function or a module can only be used in that specific function or Python Module is known as a local variable.
+
+```python
+def engine_attributes(speed):
+    '''This is a Python function named engine_attributes.
+    It keeps engine_speed as a local variable'''
+    
+    engine_speed = speed
+    
+engine_attributes(150) # call the function by passing 150 as an argument
+print(engine_speed) # display engine speed. Syntax error.
+```
+
+
+
+Above code will be throw a syntax error. because engine_speed declarer inside the engine_attributes function. Which means it can not be access outside of the function. If we want to access that variable outside of the function, we should declare it as a global variable.
+
+
+```python
+def engine_attributes(speed):
+    '''This is a Python function named engine_attributes.
+    it keeps engine_speed as a local variable'''
+    
+    global engine_speed # re-declared the variable engine_speed in the function as a global variable
+    engine_speed = speed
+    
+engine_attributes(150) # call the function by passing 150 as an argument
+print(engine_speed) # display engine speed
+```
+
+
+
+#### Delete declared variable
+
+Delete a variable when it is not in use so as to free up space.
+
+```python
+abc = 10
+del abc # delete variable abc
+```
+
+
+
+
+
 ### Data types
 
 Data types are the categorization of data items. Python supports several built-in data types.
 
 - [ ] Scaler Types
   - Integer `int` - Positive or negative whole numbers.
-    - Integer -  `10` `-10` 
+    - Integer -  `10` 
     - Hexadecimal -  `0xfff`
     - Octal - `0o777`
     - Binary - `0b1000001`
